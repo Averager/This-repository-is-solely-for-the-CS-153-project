@@ -1,3 +1,27 @@
+try:
+	print "A:",
+	a = raw_input()
+	a = a.split(' ')
+	for i in range(len(a)):
+		a[i] = int(a[i])
+	print "B:",
+	b = raw_input()
+	b = b.split(' ')
+	for i in range(len(b)):
+		b[i] = int(b[i])
+	print "P:",
+	p = raw_input()
+	p = p.split(' ')
+	for i in range(len(p)):
+		p[i] = int(p[i])
+except:
+	print 'invalid input'
+
+invalid = False
+for x in a:
+	if x >= 2**(len(p)-1):
+		invalid = True
+for x in b:
 	if x >= 2**(len(p)-1):
 		invalid = True
 
